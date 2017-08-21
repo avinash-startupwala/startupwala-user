@@ -29,13 +29,13 @@ if (!pg_num_rows($result)) {
 
  print "\n";
 
- //$sql = "CREATE TABLE data (Name VARCHAR(20))";
+ $sql = "CREATE TABLE data (Name VARCHAR(20))";
 
- // $result = pg_query($pg_conn, $sql);
+  $result = pg_query($pg_conn, $sql);
 
-  //$sql2 = "INSERT INTO data (Name) values ('Startupwala')";
+  $sql2 = "INSERT INTO data (Name) values ('Startupwala')";
 
- // $result2 = pg_query($pg_conn, $sql2);
+  $result2 = pg_query($pg_conn, $sql2);
  print "\n";
   //echo $result2;
 
@@ -50,6 +50,21 @@ if (!pg_num_rows($result)) {
    	 print "\n";
 
    	 var_dump($single_row);
+
+
+   }
+
+   $sql4 = "SELECT * FROM salceforce.contact";
+
+      $result4 = pg_query($pg_conn, $sql4);
+
+  
+   while( $single_row_ = pg_fetch_array($result4))
+    {
+
+     print "\n";
+
+     var_dump($single_row_);
 
 
    }
