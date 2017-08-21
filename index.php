@@ -29,9 +29,9 @@ if (!pg_num_rows($result)) {
 
  print "\n";
 
-// $sql = "CREATE TABLE data (Name VARCHAR(20))";
+ $sql = "CREATE TABLE data (Name VARCHAR(20))";
 
-  //$result = pg_query($pg_conn, $sql);
+  $result = pg_query($pg_conn, $sql);
 
   $sql2 = "INSERT INTO data (Name) values ('Startupwala')";
 
