@@ -54,20 +54,24 @@ if (!pg_num_rows($result)) {
 
    }
 
-   $sql4 = "SELECT * FROM salceforce.contact";
+   	$fetch_from_saleforce_contact=  "SELECT  firstname, lastname, email FROM salesforce.contact
+						ORDER BY
+						  systemmodstamp DESC";
 
-      $result4 = pg_query($pg_conn, $sql4);
+						  $fetched_saleforce_data = pg_query($pg_conn, $fetch_from_saleforce_contact);
 
-  
-   while( $single_row_ = pg_fetch_array($result4))
-    {
+						  
 
-     print "\n";
+						  while( $row = pg_fetch_array($fetched_saleforce_data))
+						   {
 
-     var_dump($single_row_);
+						   	 print "\n";
+
+						   	 var_dump($row);
 
 
-   }
+						   }
+
 
 
 // query($sql);
