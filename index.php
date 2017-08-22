@@ -29,13 +29,13 @@ if (!pg_num_rows($result)) {
 
  print "\n";
 
- $sql = "CREATE TABLE data (Name VARCHAR(20))";
+ //$sql = "CREATE TABLE data (Name VARCHAR(20))";
 
-  $result = pg_query($pg_conn, $sql);
+  //$result = pg_query($pg_conn, $sql);
 
-  $sql2 = "INSERT INTO data (Name) values ('Startupwala')";
-
-  $result2 = pg_query($pg_conn, $sql2);
+ // $sql2 = "INSERT INTO data (Name) values ('Startupwala')";
+//
+  //$result2 = pg_query($pg_conn, $sql2);
  print "\n";
   //echo $result2;
 
@@ -54,7 +54,7 @@ if (!pg_num_rows($result)) {
 
    }
 
-   	$fetch_from_saleforce_contact=  "SELECT  firstname, lastname, email FROM salesforce.contact
+   	$fetch_from_saleforce_contact=  "SELECT  firstname, lastname, email, phone FROM salesforce.contact
 						ORDER BY
 						  systemmodstamp DESC";
 
