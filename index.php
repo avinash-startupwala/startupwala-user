@@ -1,6 +1,6 @@
 <?php
-
-
+echo "h \n";
+ echo "<a href="sendmail.php">send mail</a><br />";
   error_reporting(E_ALL);
     ini_set('display_errors', 1);
 echo "<h1>WELCOME TO STARTUPWALA</h1> \n";
@@ -9,7 +9,7 @@ require_once("heroku_postgres_database.php");
 
 $herokupostgrsdatabse = new HerokuPostgresDatabase();
 
- echo "<a href="sendmail.php">send mail</a><br />";
+
 
 $sql = "CREATE TABLE demobmc(
    user_id SERIAL PRIMARY KEY,
