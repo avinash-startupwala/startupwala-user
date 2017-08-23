@@ -1,7 +1,5 @@
 <?php
-
-
-  error_reporting(E_ALL);
+error_reporting(E_ALL);
     ini_set('display_errors', 1);
 echo "WELCOME TO STARTUPWALA \n";
 
@@ -31,14 +29,6 @@ $sql2 = "delete from demobmc where user_id = 1";
   //$result3 = $herokupostgrsdatabse->query($sql3);
 
 
-echo "<br>";
-echo "<br>";
-echo "<br>";
-
-  //while( $row = pg_fetch_array($result3))
-              // {
-
-             //  }
 
 
 ?>
