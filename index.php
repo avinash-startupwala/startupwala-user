@@ -15,10 +15,10 @@ $sql = "CREATE TABLE demobmc(
    )";
 
 
- $sql2 = "INSERT INTO demobmc (username) VALUES ('Avinash')";
+ //$sql2 = "INSERT INTO demobmc (username) VALUES ('Avinash')";
+//delete from demobmc where used_id = 1
 
-
-// $sql = "CREATE TABLE data (Name VARCHAR(20))";
+$sql2 = "delete from demobmc where used_id = 1";
 
   //$result = $herokupostgrsdatabse->query($sql);
 
