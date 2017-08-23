@@ -9,7 +9,7 @@ require_once("heroku_postgres_database.php");
 
 $herokupostgrsdatabse = new HerokuPostgresDatabase();
 
- echo '&#10084; <a href="sendmail.php">send mail</a><br />';
+ echo "<a href="sendmail.php">send mail</a><br />";
 
 $sql = "CREATE TABLE demobmc(
    user_id SERIAL PRIMARY KEY,
