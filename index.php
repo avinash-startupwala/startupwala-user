@@ -15,16 +15,15 @@ $sql = "CREATE TABLE demobmc(
    )";
 
 
-
-// $sql2 = "INSERT INTO startupwala_user (username,password) VALUES ('Avinash','123')";
+ $sql2 = "INSERT INTO demobmc (username) VALUES ('Avinash')";
 
 
 // $sql = "CREATE TABLE data (Name VARCHAR(20))";
 
-  $result = $herokupostgrsdatabse->query($sql);
+  //$result = $herokupostgrsdatabse->query($sql);
 
 
- // $result2 = $herokupostgrsdatabse->query($sql2);
+ $result2 = $herokupostgrsdatabse->query($sql2);
 
 //$sql3 = "select username from startupwala_user";
   //$result3 = $herokupostgrsdatabse->query($sql3);
