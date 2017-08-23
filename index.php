@@ -18,7 +18,7 @@ $sql = "CREATE TABLE demobmc(
  //$sql2 = "INSERT INTO demobmc (username) VALUES ('Avinash')";
 //delete from demobmc where used_id = 1
 
-$sql2 = "delete from demobmc where used_id = 1";
+$sql2 = "delete from demobmc where user_id = 1";
 
   //$result = $herokupostgrsdatabse->query($sql);
 
