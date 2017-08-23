@@ -3,7 +3,7 @@ echo "h \n";
  echo "<a href="sendmail.php">send mail</a><br />";
   error_reporting(E_ALL);
     ini_set('display_errors', 1);
-echo "<h1>WELCOME TO STARTUPWALA</h1> \n";
+echo "WELCOME TO STARTUPWALA \n";
 
 require_once("heroku_postgres_database.php");
 
@@ -34,7 +34,7 @@ $sql2 = "delete from demobmc where user_id = 1";
 echo "<br>";
 echo "<br>";
 echo "<br>";
-echo "\n <h3>following users are already registered:<h3>";
+
   //while( $row = pg_fetch_array($result3))
               // {
 
