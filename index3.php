@@ -24,7 +24,7 @@ $herokupostgrsdatabse = new HerokuPostgresDatabase();
 
  //   )";
 
-  // $create_table_result = $herokupostgrsdatabse->query($create_table_query);
+  // $create_table_result =  $herokupostgrsdatabse->query($create_table_query);
 
 
    $insert_query = "insert into registered_users (first_name,last_name,phone,city,looking_for,email,password) 
